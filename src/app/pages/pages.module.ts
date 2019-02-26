@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+// rutas
+import { PAGES_ROUTES } from './pages.routes';
 
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
@@ -15,7 +17,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
         ProgressComponent,
         Graficas1Component
     ],
-    imports: [ CommonModule, SharedModule ],
+    imports: [ CommonModule, SharedModule, PAGES_ROUTES ],
     exports: [
         PagesComponent,
         DashboardComponent,
